@@ -18,5 +18,6 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+Route::get('/listStd',[\App\Http\Controllers\StudentController::class, 'listStd']);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
